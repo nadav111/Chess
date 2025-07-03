@@ -1,18 +1,92 @@
-## Getting Started
+♟️ Chess Engine with AI Bot
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java-based Chess game with a graphical user interface and an intelligent AI opponent powered by a decision tree strategy.Supports all standard chess rules, including castling, en passant, promotion, check, and checkmate.
 
-## Folder Structure
+📂 Features
 
-The workspace contains two folders by default, where:
+✅ BitBoard-based board representation for efficient move calculation
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+✅ Graphical user interface built with Java Swing
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+✅ Supports all legal chess moves:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Castling (both sides)
 
-## Dependency Management
+En passant
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Pawn promotion
+
+Check and checkmate detection
+
+✅ AI Bot:
+
+Plays as white or black
+
+Uses decision-tree based strategy for opening, middlegame, and endgame
+
+Avoids illegal or unsafe moves
+
+✅ Move legality validation
+
+✅ PGN-style move notation printed in the console for debugging
+
+🖥️ Requirements
+
+Java 8+ (tested on Java 17)
+
+Git (optional, for cloning)
+
+🚀 Getting Started
+
+1️⃣ Clone the repository
+
+git clone https://github.com/nadav111/Chess.git
+cd Chess
+
+2️⃣ Build and Run
+
+Using the terminal:
+
+javac -d bin src/chess/*.java
+java -cp bin chess.Main
+
+Or open the project in Visual Studio Code / IntelliJ IDEA / Eclipse, then run Main.java.
+
+🎮 How to Play
+
+White always starts first.
+
+You can play as human vs. AI, or adjust the bot to play as both sides.
+
+Make your move by clicking on a piece and then the destination square.
+
+The bot will automatically play its move after yours.
+
+🧠 Bot Strategy
+
+The AI bot follows a three-phase decision tree:
+
+Opening: control the center, develop pieces, castle early
+
+Middlegame: identify weak squares, activate pieces, look for tactics
+
+Endgame: push pawns, activate king, avoid stalemate
+
+It tries to play safe, prioritizing king safety and material advantage.
+
+📷 Screenshots
+![image](https://github.com/user-attachments/assets/58204574-8d09-473c-88b8-ff58efdaf82e)
+
+
+📄 License
+
+Copyright © 2025 NadaBv. All Rights Reserved.
+
+This project and its source code are the intellectual property of NadavB.
+
+Unauthorized copying, distribution, modification, or publication of any part of this project, in whole or in part, without explicit written permission from the copyright holder is strictly prohibited.
+
+
+
+For inquiries about usage rights or licensing, please contact: majorityrules60@gmail.com.
+
